@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestLayer.LogginTest">
+      <class name="com.TestLayer.CreateAccountTest">
         <methods>
           <include name="browserLaunch"/>
           <include name="stop"/>
           <include name="start"/>
           <include name="browserClose"/>
-          <include name="verifyLoginTest"/>
+          <include name="login"/>
+          <include name="verifyCreateAccount"/>
         </methods>
-      </class> <!-- com.TestLayer.LogginTest -->
+      </class> <!-- com.TestLayer.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

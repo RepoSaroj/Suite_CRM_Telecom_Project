@@ -10,7 +10,7 @@ public class ReadConfig
 	Properties property;
 	public ReadConfig() throws IOException 
 	{
-		String configpath="C:\\Eclipse Framework\\CRM_GitHub_Repo\\CRMTelecomProject\\Config\\Config.properties";
+		String configpath="C:\\Eclipse Framework\\CRM\\CRMTelecomProject\\Config\\Config.properties";
 	    File file = new File(configpath);
 	    FileInputStream fis = new FileInputStream(file);
 	    property = new Properties();
@@ -21,11 +21,6 @@ public class ReadConfig
 	{
 		String url = property.getProperty("url");
 		return url;
-	}
-	public String getExcellPath() 
-	{
-		String ExcellPath = property.getProperty("excellpath");
-		return ExcellPath;
 	}
 	
 }
