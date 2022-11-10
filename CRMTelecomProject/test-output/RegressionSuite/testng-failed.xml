@@ -4,15 +4,16 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="RegressionTest(failed)">
     <classes>
-      <class name="com.TestLayer.LogginTest">
+      <class name="com.TestLayer.CreateAccountTest">
         <methods>
           <include name="browserLaunch"/>
           <include name="stop"/>
           <include name="start"/>
           <include name="browserClose"/>
-          <include name="verifyLoginTest"/>
+          <include name="login"/>
+          <include name="verifyCreateAccount"/>
         </methods>
-      </class> <!-- com.TestLayer.LogginTest -->
+      </class> <!-- com.TestLayer.CreateAccountTest -->
     </classes>
   </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

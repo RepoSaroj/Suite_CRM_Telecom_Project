@@ -4,7 +4,7 @@
 <parameter name="browser" value="chrome"></parameter>
   <test thread-count="5" name="RegressionTest">
     <classes>
-      <class name="com.TestLayer.LogginTest"/>
+      <class name="com.TestLayer.CreateAccountTest"/>
     </classes>
   </test> <!-- RegressionTest -->
 </suite> <!-- RegressionSuite -->

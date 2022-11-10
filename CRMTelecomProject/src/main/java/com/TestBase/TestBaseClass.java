@@ -9,14 +9,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.PageLayer.HomePage;
 import com.PageLayer.LoginPage;
 import com.Utility.ReadConfig;
+import com.Utility.ReadData;
+import com.Utility.UtilClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,9 +30,14 @@ public class TestBaseClass
 	//-----variable Declaration------
 	public static WebDriver driver;
 	public static Logger logger;
+	public Actions action;
 	
+	//--------Page Object declaration-----------
 	public LoginPage login;
+	public HomePage home;
+	public UtilClass util;
 	public static ReadConfig readconfig;
+	
 	//---------Logger start and stop-------------
 	@BeforeTest
 	public void start()
@@ -43,11 +53,11 @@ public class TestBaseClass
 	}
 
 	//-----------browser launch and close------------
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeClass
-	public void browserLaunch(String br) throws IOException 
+	public void browserLaunch() throws IOException 
 	{
-		//String br ="chrome";
+		String br ="chrome";
 		if(br.equalsIgnoreCase("chrome")) 
 		{
 			WebDriverManager.chromedriver().setup();
@@ -74,12 +84,16 @@ public class TestBaseClass
 		readconfig = new ReadConfig();
 		
 		driver.get(readconfig.getApplicationUrl());
+		logger.info("application launch");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		//----------Object Creation-----------
+		action = new Actions(driver);
 		login = new LoginPage();
+		home = new HomePage();
+		util = new UtilClass();
 	}
 	
 	@AfterClass
@@ -88,8 +102,14 @@ public class TestBaseClass
 		driver.quit();
 	}
 	
-	public void login() 
+	@BeforeMethod
+	public void login() throws IOException, InterruptedException 
 	{
-		
+		login.enterUserName(ReadData.readData("crmData", 1, 0));
+		logger.info("username enterd");
+		login.enterPassword(ReadData.readData("crmData", 1, 1));
+		logger.info("password enterd");
+		login.clickOnLoginBtn();
+		logger.info("login btn clicked");	
 	}
 }

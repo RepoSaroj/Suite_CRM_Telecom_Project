@@ -8,7 +8,7 @@ import com.TestBase.TestBaseClass;
 
 public class LoginPage extends TestBaseClass
 {
-	//initialization
+	//-------WebElement initialization---------
 	public LoginPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -17,8 +17,10 @@ public class LoginPage extends TestBaseClass
 	//---------------Object Repo-----------
 	@FindBy(xpath="//input[@name='username']")
 	private WebElement username;
+	
 	@FindBy(xpath="//input[@name='password']")
 	private WebElement password;
+	
 	@FindBy(xpath="//button[@id='login-button']")
 	private WebElement loginBtn;
 	
