@@ -16,7 +16,6 @@ public class LogginTest extends TestBaseClass
 	@Test
 	public void verifyLoginTest() throws InterruptedException, IOException 
 	{
-		Thread.sleep(6000);
 		Assert.assertEquals(util.getUrl(), expected_url);
 		logger.info("assertion pass");
 	}

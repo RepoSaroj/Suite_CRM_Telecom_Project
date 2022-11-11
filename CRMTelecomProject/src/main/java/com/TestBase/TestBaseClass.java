@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import com.PageLayer.CreateAccountPage;
 import com.PageLayer.HomePage;
 import com.PageLayer.LoginPage;
 import com.Utility.ReadConfig;
@@ -35,6 +36,7 @@ public class TestBaseClass
 	//--------Page Object declaration-----------
 	public LoginPage login;
 	public HomePage home;
+	public CreateAccountPage createAccount;
 	public UtilClass util;
 	public static ReadConfig readconfig;
 	
@@ -55,7 +57,7 @@ public class TestBaseClass
 	//-----------browser launch and close------------
 	//@Parameters("browser")
 	@BeforeClass
-	public void browserLaunch() throws IOException 
+	public void browserLaunch() throws IOException, InterruptedException 
 	{
 		String br ="chrome";
 		if(br.equalsIgnoreCase("chrome")) 
@@ -94,22 +96,24 @@ public class TestBaseClass
 		login = new LoginPage();
 		home = new HomePage();
 		util = new UtilClass();
+		createAccount=new CreateAccountPage();
 	}
 	
 	@AfterClass
 	public void browserClose() 
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@BeforeMethod
 	public void login() throws IOException, InterruptedException 
 	{
-		login.enterUserName(ReadData.readData("crmData", 1, 0));
+		login.enterUserName("will");
 		logger.info("username enterd");
-		login.enterPassword(ReadData.readData("crmData", 1, 1));
+		login.enterPassword("will");
 		logger.info("password enterd");
 		login.clickOnLoginBtn();
-		logger.info("login btn clicked");	
+		logger.info("login btn clicked");
+		Thread.sleep(7000);
 	}
 }
