@@ -10,6 +10,8 @@ import com.TestBase.TestBaseClass;
 
 public class HomePage extends TestBaseClass
 {
+	public static WebElement acc_module;
+	
 	//-------WebElement initialization---------
 	public HomePage() 
 	{
@@ -35,25 +37,19 @@ public class HomePage extends TestBaseClass
 	@FindBy(xpath="(//a[contains(@class, 'top-nav')])[6]")
 	private WebElement Calendar;
 	
-	@FindBy(xpath="//a[contains(@class, 'sub-nav')]")
+	@FindBy(xpath="//a[@class='sub-nav-link nav-link action-link ng-star-inserted']")
 	private List <WebElement> module_link;
 	
 	//------------Action method----------
-
-	public void moveToAccounts() 
-	{
-		action.moveToElement(Accounts).perform();
-	}
 	
-	public void clickOnModuleLink(String link) 
+	public WebElement accountsModule() 
 	{
-		for(int i=0; i<module_link.size(); i++) 
-		{
-			String ModuleLink = module_link.get(i).getText();
-			if(ModuleLink.equalsIgnoreCase(link)) 
-			{
-				module_link.get(i).click();
-			}
-		}
+		acc_module= Accounts;
+		return acc_module;
+	}
+	public WebElement createAccountLink() 
+	{
+		acc_module= module_link.get(0);
+		return acc_module;
 	}
 }
