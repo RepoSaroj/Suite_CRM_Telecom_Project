@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\saroj\AppData\Local\Temp\testng-eclipse-1011803117\testng-customsuite.xml</span>
+                    <span>C:\Users\saroj\AppData\Local\Temp\testng-eclipse--357026958\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.TestLayer.CreateAccountTest" class="method navigator-link" hash-for-method="verifyCreateAccount">verifyCreateAccount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestLayer.LogginTest" class="method navigator-link" hash-for-method="verifyLoginTest">verifyLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -122,24 +122,23 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.TestLayer.CreateAccountTest</span>
+              <span class="class-name">com.TestLayer.LogginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyCreateAccount">
-                  </a> <!-- verifyCreateAccount -->
-                  <span class="method-name">verifyCreateAccount</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from target frame detached
+                  <a name="verifyLoginTest">
+                  </a> <!-- verifyLoginTest -->
+                  <span class="method-name">verifyLoginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=107.0.5304.107)
 Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [252cee5394fa51de8cb23fb275a766a3, get {url=https://suite8demo.suiteondemand.com/#/Login	}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\saroj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55982}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55982/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 252cee5394fa51de8cb23fb275a766a3
+Command: [1e0af58ee31d38a9d83851405bd2a90f, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\saroj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51479}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51479/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e0af58ee31d38a9d83851405bd2a90f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,8 +151,10 @@ Session ID: 252cee5394fa51de8cb23fb275a766a3
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
-	at com.TestBase.TestBaseClass.browserLaunch(TestBaseClass.java:88)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:952)
+	at com.TestBase.TestBaseClass.browserLaunch(TestBaseClass.java:98)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,7 +190,7 @@ Session ID: 252cee5394fa51de8cb23fb275a766a3
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\saroj\AppData\Local\Temp\testng-eclipse-1011803117\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\saroj\AppData\Local\Temp\testng-eclipse--357026958\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,7 +199,7 @@ Session ID: 252cee5394fa51de8cb23fb275a766a3
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.TestLayer.CreateAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.TestLayer.LogginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -240,8 +241,8 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCreateAccount')
-data.setCell(0, 2, 'com.TestLayer.CreateAccountTest')
+data.setCell(0, 1, 'verifyLoginTest')
+data.setCell(0, 2, 'com.TestLayer.LogginTest')
 data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -273,7 +274,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.TestLayer.CreateAccountTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.TestLayer.LogginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">start</span>
                 <span class="method-start">0 ms</span>
@@ -282,23 +283,23 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">browserLaunch</span>
-                <span class="method-start">320 ms</span>
+                <span class="method-start">168 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">31375 ms</span>
+                <span class="method-start">36696 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyCreateAccount</span>
-                <span class="method-start">31384 ms</span>
+                <span class="method-name">verifyLoginTest</span>
+                <span class="method-start">36701 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">31397 ms</span>
+                <span class="method-start">36714 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">stop</span>
-                <span class="method-start">31418 ms</span>
+                <span class="method-start">36722 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,15 +5,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ReadConfig 
+import com.TestBase.TestBaseClass;
+
+public class ReadConfig extends TestBaseClass
 {
-	Properties property;
+	
 	public ReadConfig() throws IOException 
 	{
-		String configpath="C:\\Eclipse Framework\\CRM\\CRMTelecomProject\\Config\\Config.properties";
-	    File file = new File(configpath);
+		String configpath="C:\\Eclipse Framework\\RepositoryProject\\CRM_Telecom\\Suite_CRM_Telecom_Project\\CRMTelecomProject\\Config\\Config.properties";
+		File file = new File(configpath);
 	    FileInputStream fis = new FileInputStream(file);
-	    property = new Properties();
 	    property.load(fis);
 	}
 	
@@ -21,6 +22,11 @@ public class ReadConfig
 	{
 		String url = property.getProperty("url");
 		return url;
+	}
+	public String getBrowser() 
+	{
+		String browser = property.getProperty("browser");
+		return browser;
 	}
 	
 }

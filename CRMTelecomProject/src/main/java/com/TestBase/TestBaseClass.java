@@ -2,6 +2,7 @@ package com.TestBase;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -32,21 +33,27 @@ public class TestBaseClass
 	public static WebDriver driver;
 	public static Logger logger;
 	public Actions action;
+	public static Properties property;
 	
 	//--------Page Object declaration-----------
+	
 	public LoginPage login;
 	public HomePage home;
 	public CreateAccountPage createAccount;
 	public UtilClass util;
-	public static ReadConfig readconfig;
+	public ReadConfig readconfig;
 	
 	//---------Logger start and stop-------------
 	@BeforeTest
-	public void start()
+	public void start() throws IOException
 	{
 		logger = Logger.getLogger("CRMTelecomPrjectFramework");
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.info("Framework execution start");
+		
+		//-------object creation--------------
+		property = new Properties();
+		readconfig = new ReadConfig();
 	}
 	@AfterTest
 	public void stop()
@@ -57,9 +64,11 @@ public class TestBaseClass
 	//-----------browser launch and close------------
 	//@Parameters("browser")
 	@BeforeClass
-	public void browserLaunch() throws IOException, InterruptedException 
+	public void browserLaunch() throws InterruptedException 
 	{
-		String br ="chrome";
+		//String br ="chrome";
+		String br = readconfig.getBrowser();
+		Thread.sleep(3000);
 		if(br.equalsIgnoreCase("chrome")) 
 		{
 			WebDriverManager.chromedriver().setup();
@@ -83,7 +92,6 @@ public class TestBaseClass
 			logger.info("please provide correct browser");
 		}
 		
-		readconfig = new ReadConfig();
 		
 		driver.get(readconfig.getApplicationUrl());
 		logger.info("application launch");
@@ -114,6 +122,6 @@ public class TestBaseClass
 		logger.info("password enterd");
 		login.clickOnLoginBtn();
 		logger.info("login btn clicked");
-		Thread.sleep(7000);
+		Thread.sleep(11000);
 	}
 }
