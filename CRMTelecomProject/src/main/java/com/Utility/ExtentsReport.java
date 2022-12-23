@@ -1,18 +1,29 @@
 package com.Utility;
 
+import java.io.File;
+
 import org.testng.IReporter;
 
-import com.TestBase.TestBaseClass;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class ExtentsReport extends TestBaseClass implements IReporter
+public class ExtentsReport implements IReporter
 {
-	ExtentReports reports;
-	ExtentTest test;
+	public static ExtentReports extent;
+	public static ExtentTest test;
 	
-	public void extentReport() 
+	public void extentReportGenerate() 
 	{
-		reports = new ExtentReports(property.getProperty("Report"),true);
+		extent = new ExtentReports();
+		
+		String path = System.getProperty("user.dir")+"\\ExtentReports\\eReorts.html";
+		
+		File file = new File(path);
+		
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
+		
+		extent.attachReporter(sparkReporter);
+		
 	}
 }

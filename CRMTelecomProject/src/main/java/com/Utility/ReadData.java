@@ -12,7 +12,7 @@ public class ReadData extends TestBaseClass
 {
 	public static String readData(String sheetname, int rownum, int cellnum) throws IOException 
 	{
-		String path = "C:\\Eclipse Framework\\CRM\\CRMTelecomProject\\src\\main\\java\\com\\TestData\\CRM Credential.xlsx";
+		String path = System.getProperty("user.dir")+"\\src\\main\\java\\com\\TestData\\CRM Credential.xlsx";
 	    File file = new File(path);
 	    FileInputStream fis = new FileInputStream(file);
 	    XSSFWorkbook wb = new XSSFWorkbook(fis);

@@ -3,50 +3,48 @@ package com.Utility;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import com.TestBase.TestBaseClass;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 
-public class ListenerSetup extends TestBaseClass implements ITestListener
+import com.aventstack.extentreports.Status;
+
+public class ListenerSetup extends ExtentsReport implements ITestListener
 {
-	@Override
-	public void onTestStart(ITestResult result) {
-		logger.info("Testcase execution started");
+	
+	public void onTestStart(ITestResult result)
+	{
+		test = extent.createTest(result.getName());
+		test.log(Status.INFO,"Test Execution Start");
 	}
 
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		logger.info("Testcase execution passed");
+	
+	public void onTestSuccess(ITestResult result)
+	{
+		test.log(Status.INFO,"Test Execution complete");
+		test.log(Status.PASS,"Test Execution Pass");
+		test.addScreenCaptureFromPath(UtilClass.getScreenshotPath(result.getName()));
 	}
 
-	@Override
-	public void onTestFailure(ITestResult result) {
-		logger.info("Testcase execution failed");
+	
+	public void onTestFailure(ITestResult result) 
+	{
+		test.log(Status.INFO,"Test Execution Complete");
+		test.log(Status.FAIL,"Test Execution Failed");
+		test.addScreenCaptureFromPath(UtilClass.getScreenshotPath(result.getName()));
 	}
 
-	@Override
-	public void onTestSkipped(ITestResult result) {
-		logger.info("Testcase execution skipped");
+	public void onTestSkipped(ITestResult result)
+	{
+		test.log(Status.SKIP,"Test Execution Skip");
 	}
 
-	@Override
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		
+	public void onStart(ITestContext context)
+	{
+		extentReportGenerate();
 	}
 
-	@Override
-	public void onTestFailedWithTimeout(ITestResult result) {
-		
-	}
-
-	@Override
-	public void onStart(ITestContext context) {
-		
-	}
-
-	@Override
-	public void onFinish(ITestContext context) {
-		
+	
+	public void onFinish(ITestContext context)
+	{
+		extent.flush();
 	}
 
 }

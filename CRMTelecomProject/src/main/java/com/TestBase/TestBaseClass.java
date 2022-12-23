@@ -62,13 +62,20 @@ public class TestBaseClass
 	}
 
 	//-----------browser launch and close------------
-	//@Parameters("browser")
+	@Parameters("browser")
 	@BeforeClass
-	public void browserLaunch() throws InterruptedException 
+	public void browserLaunch(String br)  
 	{
-		//String br ="chrome";
-		String br = readconfig.getBrowser();
-		Thread.sleep(3000);
+		
+		try 
+		{
+			Thread.sleep(3000);
+		} 
+		catch (InterruptedException e)
+		{
+			e.printStackTrace();
+		}
+		
 		if(br.equalsIgnoreCase("chrome")) 
 		{
 			WebDriverManager.chromedriver().setup();
@@ -110,15 +117,15 @@ public class TestBaseClass
 	@AfterClass
 	public void browserClose() 
 	{
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@BeforeMethod
 	public void login() throws IOException, InterruptedException 
 	{
-		login.enterUserName("will");
+		login.enterUserName(property.getProperty("username"));
 		logger.info("username enterd");
-		login.enterPassword("will");
+		login.enterPassword(property.getProperty("password"));
 		logger.info("password enterd");
 		login.clickOnLoginBtn();
 		logger.info("login btn clicked");

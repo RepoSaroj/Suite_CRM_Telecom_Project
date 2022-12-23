@@ -5,12 +5,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 
 import com.TestBase.TestBaseClass;
-
-import net.bytebuddy.utility.RandomString;
 
 public class UtilClass extends TestBaseClass 
 {
@@ -20,24 +17,22 @@ public class UtilClass extends TestBaseClass
 		return url;
 	}
 	
-	public static void getScreenshot() throws IOException 
+	public static String getScreenshotPath(String name) 
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
-		File file = ts.getScreenshotAs(OutputType.FILE);
-		String path = property.getProperty("ScreenshotPath");
-		String Random = RandomString.make(2);
-		File dest = new File(path+Random+".png");
-		FileHandler.copy(file, dest);
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String path = System.getProperty("user.dir")+"\\Screenshots\\";
+		File destination = new File(path + name + ".png");
 		
-	}
-	public static void getElementScreenshot(WebElement element ) throws IOException 
-	{
-		TakesScreenshot ts = (TakesScreenshot)element;
-		File file = ts.getScreenshotAs(OutputType.FILE);
-		String path = property.getProperty("ScreenshotPath");
-		String Random = RandomString.make(2);
-		File dest = new File(path+Random+".png");
-		FileHandler.copy(file, dest);
-		
+
+		try
+		{
+			FileHandler.copy(source, destination);
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+		return destination.getAbsolutePath();
 	}
 }

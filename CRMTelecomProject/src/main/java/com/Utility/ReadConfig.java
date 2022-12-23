@@ -12,7 +12,8 @@ public class ReadConfig extends TestBaseClass
 	
 	public ReadConfig() throws IOException 
 	{
-		String configpath="C:\\Eclipse Framework\\RepositoryProject\\CRM_Telecom\\Suite_CRM_Telecom_Project\\CRMTelecomProject\\Config\\Config.properties";
+		String configpath=System.getProperty("user.dir")+"\\Config\\Config.properties";
+		//String configpath="C:\\Eclipse Framework\\Suite_CRM_Telecom_Project\\CRMTelecomProject\\Config\\Config.properties";
 		File file = new File(configpath);
 	    FileInputStream fis = new FileInputStream(file);
 	    property.load(fis);

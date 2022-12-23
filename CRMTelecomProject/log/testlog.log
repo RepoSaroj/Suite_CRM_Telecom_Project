@@ -81,3 +81,118 @@
 2022-11-28 20:21:44,375 - CRMTelecomPrjectFramework -INFO - chrome browser launch
 2022-11-28 20:22:14,773 - CRMTelecomPrjectFramework -INFO - application launch
 2022-11-28 20:22:14,911 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:25:50,822 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:25:58,608 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:27:05,213 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:27:10,164 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:31:40,709 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:31:45,554 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:34:41,835 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:34:46,456 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:40:17,879 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:40:22,528 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:43:10,019 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:44:16,305 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 11:44:22,692 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 11:44:29,351 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 11:44:29,520 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 11:44:29,615 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 11:44:40,693 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 11:44:43,720 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:45:55,031 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:46:03,528 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 11:46:10,951 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 11:46:15,609 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 11:46:15,864 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 11:46:16,024 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 11:46:27,898 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:53:40,007 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:53:48,266 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 11:53:55,755 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 11:54:00,553 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 11:54:00,853 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 11:54:00,987 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 11:54:12,044 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 11:54:13,458 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 11:57:04,018 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 11:57:12,297 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 11:57:20,257 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 11:57:28,046 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 11:57:28,296 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 11:57:28,495 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 11:57:39,554 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 11:57:42,037 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:00:21,484 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:00:29,684 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:00:38,726 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:00:46,497 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:00:46,705 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:00:46,849 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:00:57,913 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 12:00:59,003 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:01:50,317 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:01:58,667 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:02:07,019 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:02:12,086 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:02:12,294 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:02:12,426 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:02:24,253 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:03:03,840 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:03:11,988 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:03:20,089 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:03:25,629 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:03:25,839 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:03:26,004 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:03:37,060 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 12:03:38,523 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:04:14,271 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:04:26,522 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:04:31,870 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:04:35,824 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:04:36,051 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:04:36,173 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:04:47,219 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 12:04:48,557 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:08:23,437 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:08:31,600 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:08:38,499 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:08:43,291 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:08:43,571 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:08:43,677 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:08:55,503 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:11:23,610 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:11:31,545 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:11:39,256 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:11:44,777 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:11:45,105 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:11:45,201 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:11:56,276 - CRMTelecomPrjectFramework -INFO - assertion pass
+2022-12-23 12:11:57,319 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:13:53,720 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:14:02,306 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:14:09,783 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:14:14,500 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:14:14,739 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:14:14,894 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:14:26,684 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:17:53,584 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:18:01,633 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:18:11,582 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:18:18,879 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:18:19,096 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:18:19,237 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:18:31,228 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:20:21,987 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:20:30,089 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:20:37,274 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:20:43,464 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:20:43,645 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:20:43,769 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:20:56,417 - CRMTelecomPrjectFramework -INFO - Framework execution stop
+2022-12-23 12:58:26,389 - CRMTelecomPrjectFramework -INFO - Framework execution start
+2022-12-23 12:58:34,509 - CRMTelecomPrjectFramework -INFO - chrome browser launch
+2022-12-23 12:58:44,422 - CRMTelecomPrjectFramework -INFO - application launch
+2022-12-23 12:58:48,991 - CRMTelecomPrjectFramework -INFO - username enterd
+2022-12-23 12:58:49,185 - CRMTelecomPrjectFramework -INFO - password enterd
+2022-12-23 12:58:49,348 - CRMTelecomPrjectFramework -INFO - login btn clicked
+2022-12-23 12:59:01,517 - CRMTelecomPrjectFramework -INFO - Framework execution stop
